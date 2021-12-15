@@ -11,7 +11,7 @@ div.tela{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 20rem;
     height: 70%;
     margin: auto;
     background-color: rgb(96, 148, 226);
