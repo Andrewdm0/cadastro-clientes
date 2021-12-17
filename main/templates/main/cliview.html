@@ -4,15 +4,9 @@
 
 {% block content %}
     <h3>{{cliente.nome}}</h3>
-    <ul>
-        <li>
-            <span>{{cliente.celular}}</span>
-        </li>
-        <li>
-            <span>{{cliente.data}}</span>
-        </li>
-        <li>
-            <span>{{cliente.estado}}</span>
-        </li>
-    </ul>
+    <div class="cliente-info">
+        <span> <b>Celular:</b>  {{cliente.celular}}</span>
+        <span> <b>Data:</b> {{cliente.data}}</span>
+        <span> <b>Estado:</b> {{cliente.estado}}</span>
+    </div>
 {% endblock %}

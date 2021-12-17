@@ -7,7 +7,7 @@ class Cliente(models.Model):
     ]
     nome = models.CharField(max_length=50)
     celular = models.CharField(max_length=50)
-    data = models.TimeField(auto_now_add=True)
+    data = models.DateTimeField(auto_now_add=True)
     estado = models.CharField(
         max_length=7,
         choices=STATUS,

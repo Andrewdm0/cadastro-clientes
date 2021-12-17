@@ -7,4 +7,5 @@ urlpatterns = [
     path('hello/', views.HelloWorld, name='HelloWorld'),
     path('cliente/', views.Clientes, name='Cliente'),
     path('cliente/<str:id>',views.ClientesView, name = 'ClientesView'),
+    path('novo-cliente/',views.CriaCliente,name='CriaCliente')
 ]
