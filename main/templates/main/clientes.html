@@ -6,12 +6,11 @@
     <h1>Clientes:</h1>
 
     {% for cliente in clientes %}
-    <table >
-    <tr class = "tabela-clientes">
-        <td><a href="/main/cliente/{{cliente.id}}">{{ cliente.nome }}</a></td>
-    </tr>
-    </table>
-    <span>------------------------------------------------</span>
+    <div class = "tabela-clientes">
+        <div><a href="/cliente/{{cliente.id}}">{{ cliente.nome }}</a></div>
+        <div><a href="/edit/{{cliente.id}}"><button value="Editar" class="botao">Editar</button></a></div>
+        <div><a href="/delete/{{cliente.id}}"><button value="Editar" class="botao">Deletar</button></a></div>
+    </div>
     {% endfor %}
 {% endblock %}
     

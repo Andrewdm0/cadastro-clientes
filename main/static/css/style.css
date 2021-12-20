@@ -28,9 +28,7 @@ body{
 div.tela{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 20rem;
+    width: 60%;
     height: 70%;
     margin: auto;
     background-color: rgb(96, 148, 226);
@@ -43,15 +41,50 @@ div.tela{
 /* Clientes*/
 
 .tabela-clientes{
-    text-align: justify;
+    display: grid;
+    grid-template-columns: 6fr 1fr 1fr;
+    border-bottom: 1px solid white;
 }
 
+.tabela-clientes div{
+    margin: 5px;
+    align-self: center;
+}
 /* CliView*/
 
 .cliente-info{
     display: flex;
     flex-direction: column;
 }
+
+.cliente-info span{
+    margin-bottom: 1rem;
+}
+
+
+/* Geral */
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    color: white;
+}
+
+.botao{
+    color: white;
+    background-color: #A7C1E8;
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 5rem;
+    height: 2rem;
+    margin: auto;
+}
+
+.botao:hover{
+    background-color: #879cbb;
+}
+
 
 a{
     color: white;
@@ -71,6 +104,7 @@ li{
 h1{
     color: white;
     text-shadow: 1px 1px black;
+    align-self: center;
 }
 
 h3{

@@ -1,14 +1,14 @@
 {% extends 'base.html' %}
 
-{% block title %} Criar Clientes {% endblock%}
+{% block title %} {{ cliente.nome }} {% endblock%}
 
 {% block content %}
-    <h1>Adicionar Cliente:</h1>
+    <h1>Editar '{{cliente.nome}}':</h1>
     <form method = 'POST' class="formulario">
         {% csrf_token %}
 
         {{ clienteform.as_p }}
 
-        <input type="submit" value="Adicionar" class="botao">
+        <input type="submit" value="Concluir" class="botao">
     </form>
 {% endblock %}
