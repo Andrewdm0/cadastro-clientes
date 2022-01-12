@@ -1,9 +1,9 @@
 # cadastro-clientes
 
-Sistema de cadastro de clientes, os clientes são registrado (por enquanto via django-admin), e suas informações podem ser verificadas em uma página própria.
+Sistema de cadastro de clientes com as quatro operações básicas do CRUD (Create, Read, Update, Delete).
 
 ## Adicionando com o Django-admin
-![alt text](screenshots/admin-add.png)
+![alt text](screenshots/add-cliente.png)
 
 ## Pagina com o nome de todos os clientes
 ![alt text](screenshots/todos-clientes.png)
