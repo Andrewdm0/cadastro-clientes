@@ -1,6 +1,6 @@
 # cadastro-clientes
 
-Sistema de cadastro de clientes com as quatro operações básicas do CRUD (Create, Read, Update, Delete).
+Sistema de cadastro de clientes criado com framework Django, contém as quatro operações básicas do CRUD (Create, Read, Update, Delete).
 
 ## Página para adicionar clientes (Create)
 ![alt text](screenshots/add-cliente.png)

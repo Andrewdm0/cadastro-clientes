@@ -12,5 +12,22 @@
         <div><a href="/delete/{{cliente.id}}"><button value="Editar" class="botao">Deletar</button></a></div>
     </div>
     {% endfor %}
+    <div class="pagination">
+        <span class="step-links">
+            {% if clientes.has_previous %}
+                <a href="?page={{ clientes.previous_page_number }}"><p>voltar</p></a>
+            {% else %}
+                <p></p>
+            {% endif%}
+
+            <span class="current-page">
+                {{ clientes.number }} de {{ clientes.paginator.num_pages }}
+            </span>
+
+            {% if clientes.has_next %}
+                <a href="?page={{ clientes.next_page_number }}"><p>avançar</p></a>
+            {% endif%}
+        </span>
+    </div>
 {% endblock %}
     

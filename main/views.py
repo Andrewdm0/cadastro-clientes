@@ -1,4 +1,6 @@
 from django import http
+from django.core import paginator
+from django.core.paginator import Page, Paginator
 from django.shortcuts import redirect, render, get_object_or_404
 from django.http import HttpResponse
 from .models import Cliente
@@ -8,7 +10,14 @@ def HelloWorld(request):
     return HttpResponse('HelloWorld')
 
 def Clientes(request):
-    clientes = Cliente.objects.all().order_by('nome')
+    clientes_lista = Cliente.objects.all().order_by('nome')
+
+    paginator = Paginator(clientes_lista,5)
+
+    page = request.GET.get('page')
+
+    clientes = paginator.get_page(page)
+
     return render(request,'main/clientes.html', {'clientes': clientes})
 
 def ClientesView(request,id):

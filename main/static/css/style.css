@@ -29,6 +29,7 @@ div.tela{
     display: flex;
     flex-direction: column;
     width: 60%;
+    max-width: 400px;
     height: 70%;
     margin: auto;
     background-color: rgb(96, 148, 226);
@@ -50,6 +51,16 @@ div.tela{
     margin: 5px;
     align-self: center;
 }
+
+.step-links{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.current-page{
+    margin-top: 20px;
+}
 /* CliView*/
 
 .cliente-info{
@@ -67,7 +78,7 @@ div.tela{
 .formulario{
     display: flex;
     flex-direction: column;
-    align-items: space-between;
+    align-items: center;
     color: white;
 }
 
@@ -79,6 +90,7 @@ div.tela{
     width: 5rem;
     height: 2rem;
     margin: auto;
+    text-align: center;
 }
 
 .botao:hover{
